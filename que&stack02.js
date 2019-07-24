@@ -1,5 +1,11 @@
+<<<<<<< HEAD
 function solution(heights) {
     let answer = [];
+=======
+const test = () => {
+  let heights = [6, 9, 5, 7, 4];
+  let answer = [];
+>>>>>>> 0c5ad62b159e0f53a8d1b5081e23fe1b243fd4ad
   for (let i = 0; i < heights.length; i++) {
     answer.push(0);
   }
@@ -13,4 +19,9 @@ function solution(heights) {
     }
   }
   return answer;
+<<<<<<< HEAD
 }
+=======
+};
+test();
+>>>>>>> 0c5ad62b159e0f53a8d1b5081e23fe1b243fd4ad
