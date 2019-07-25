@@ -1,7 +1,5 @@
 const test = () => {
   let arr = "()(((()())(())()))(())";
-  console.log(arr[0])
-  let cur1 = arr.length;
   let count = 0;
   var answer = 0;
   for (let i = 0; i < arr.length; i++) {
