@@ -6,10 +6,10 @@ const test = () => {
     let pd = [];
     for (let j = command[i][0] - 1; j < command[i][1]; j++) {
       pd.push(array[j]);
-      pd.sort((a, b) => {
-        return a < b ? -1 : a > b ? 1 : 0;
-      });
     }
+    pd.sort((a, b) => {
+      return a < b ? -1 : a > b ? 1 : 0;
+    });
     answer.push(pd[command[i][2] - 1]);
   }
   console.log(answer);

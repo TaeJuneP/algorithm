@@ -28,10 +28,8 @@ const test = () => {
   if (pd.length > 0) {
     answer.push(Math.max.apply(null, pd));
     answer.push(Math.min.apply(null, pd));
-    console.log(answer);
     return answer;
   } else {
-    console.log([0, 0]);
     return [0, 0];
   }
 };
