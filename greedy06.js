@@ -10,6 +10,7 @@ const test = () => {
     if (route[0] > camera) {
       camera = route[1];
       count++;
+      console.log(camera)
     }
   });
   console.log(count);
