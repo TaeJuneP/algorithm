@@ -20,6 +20,30 @@ const test = () => {
     }
     result.push(sum);
   }
-  console.log(Math.max.apply(null, result[triangle.length-1]));
+  console.log(result);
+  console.log(Math.max.apply(null, result[triangle.length - 1]));
 };
 test();
+function solution(triangle) {
+  var answer = 0;
+  let sum = [];
+  let me = 0;
+  let left = 0;
+  let right = 0;
+  let max = 0;
+  for (let i = 0; i < triangle.length; i++) {
+    sum[i] = [];
+    if (i == 0) {
+      sum[0].push(triangle[0][0]);
+    } else {
+      for (let j = 0; j < triangle[i].length; j++) {
+        me = triangle[i][j];
+        left = sum[i - 1][j - 1] ? sum[i - 1][j - 1] : 0;
+        right = sum[i - 1][j] ? sum[i - 1][j] : 0;
+        max = Math.max(me + left, me + right);
+        sum[i][j] = max;
+      }
+    }
+  }
+  return Math.max(...sum[triangle.length - 1]);
+}
