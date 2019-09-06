@@ -11,7 +11,6 @@ const kakao04 = () => {
   if (sum <= k) {
     return -1;
   }
-  console.log(food_times);
   while (time < k) {
     if (i === food_times.length) {
       i = 0;
@@ -24,7 +23,6 @@ const kakao04 = () => {
       time++;
     }
   }
-
   while (true) {
     if (i === food_times.length) {
       i = 0;
@@ -32,7 +30,6 @@ const kakao04 = () => {
     if (food_times[i] === 0) {
       i++;
     } else {
-      console.log(i + 1);
       return i + 1;
     }
   }
