@@ -3,8 +3,8 @@ const dp04 = () => {
     let answer = 0;
     let k = [];
     let dp = [];
-    let m = 4;
-    let n = 3;
+    let m = 3;
+    let n = 2;
     for (let i = 0; i < m + 1; i++) {
       k.push(0);
     }
