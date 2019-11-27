@@ -1,10 +1,10 @@
 const test = () => {
-  let s = "a";
+  let s ="aabbaccc";
   let result = [];
   let words = [];
   let answer = "";
   let hard = [];
-  for (let k = 1; k < s.length; k++) {
+  for (let k = 1; k < s.length/2 +1; k++) {
     result = [];
     words = [];
     answer = "";
@@ -41,6 +41,7 @@ const test = () => {
   if (hard.length === 0) {
     return s.length;
   }
+  console.log(hard)
   return Math.min.apply(null, hard);
 };
 test();
