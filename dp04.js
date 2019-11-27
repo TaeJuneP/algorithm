@@ -13,6 +13,7 @@ const dp04 = () => {
     }
     console.log(dp);
     dp[1][1] = 1;
+    console.log(dp)
     puddles.map(item => {
       dp[item[1]][item[0]] = -1;
     });
