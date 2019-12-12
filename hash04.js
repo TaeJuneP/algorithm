@@ -1,4 +1,5 @@
-const test = () => {
+function solution(genres, plays) {
+  let genres = ["classic", "pop", "classic", "classic", "pop"];
   var answer = [];
   let obj = {
     max: []
@@ -46,4 +47,5 @@ const test = () => {
     }
   }
   return answer;
-};
+}
+solution();
