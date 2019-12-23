@@ -9,17 +9,17 @@ const test = () => {
         [3, 1, 3],
         [2, 0, 2],
         [3, 1, 1]];
+    let sum;
     for (let i = (example[0][0] + 1); i < example.length; i++) {
         const array = Array(example[0][0]).fill(false).map(() => Array(example[0][1]).fill(false));
         rotateCircle(example[i], example);
         const check = checkNumber(array, example)
-        const sum = removeNumber(array, example)
+        sum = removeNumber(array, example)
         if (check !== 0) {
             modifyNumber(sum / check, example);
         }
     }
-    const answer = sumNumber(example)
-    console.log(answer)
+    console.log(sum)
 
 }
 
@@ -90,15 +90,15 @@ const removeNumber = (array, example) => {
     return sum;
 }
 
-const sumNumber = (example) => {
-    let sum = 0;
-    for (let i = 1; i < example[0][0] + 1; i++) {
-        for (let j = 0; j < example[i].length; j++) {
-            sum += example[i][j]
-        }
-    }
-    return sum;
-}
+// const sumNumber = (example) => {
+//     let sum = 0;
+//     for (let i = 1; i < example[0][0] + 1; i++) {
+//         for (let j = 0; j < example[i].length; j++) {
+//             sum += example[i][j]
+//         }
+//     }
+//     return sum;
+// }
 
 const modifyNumber = (ave, example) => {
     for (let i = 1; i < example[0][0] + 1; i++) {
